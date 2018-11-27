@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
-import { MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule, MatCardModule, MatDatepickerModule, MatNativeDateModule, MatSlideToggleModule, MatSliderModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     imports: [
@@ -10,7 +11,10 @@ import { MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule, Mat
         MatIconModule,
         MatCardModule,
         MatDatepickerModule,
-        MatNativeDateModule
+        MatNativeDateModule,
+        MatSliderModule,
+        MatSlideToggleModule,
+        BrowserAnimationsModule
     ],
     exports: [
         MatButtonModule,
@@ -19,7 +23,10 @@ import { MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule, Mat
         MatIconModule,
         MatCardModule,
         MatDatepickerModule,
-        MatNativeDateModule
+        MatNativeDateModule,
+        MatSliderModule
+        MatSlideToggleModule,
+        BrowserAnimationsModule
     ]
 })
 export class MaterialModule {}

@@ -3,7 +3,7 @@
     <p>Id : {{ todoObj.id }}</p>
     <p>Is done? : {{ todoObj.isDone }}</p>
     <p>Date: {{ todoObj.date }}</p>
+    <mat-slide-toggle type="checkbox" color="primary" (click)="switchDoneFlag()">{{ !todoObj.isDone ? "Done" : "Not Done" }}</mat-slide-toggle>
     <button mat-raised-button color="primary" (click)="removeTodo()">Delete</button>
-    <button mat-raised-button color="primary" (click)="switchDoneFlag()">{{ !todoObj.isDone ? "Done" : "Not Done" }}</button>
 </mat-card>
 
