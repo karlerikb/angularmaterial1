@@ -4,7 +4,8 @@ import { TodoServerService } from '../todo-server.service';
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  styleUrls: ['./todo.component.css'],
+  preserveWhitespaces: true
 })
 export class TodoComponent implements OnInit {
 
