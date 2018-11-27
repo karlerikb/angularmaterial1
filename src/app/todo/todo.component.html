@@ -1,0 +1,9 @@
+<mat-card [class.done-todo]="todoObj.isDone">
+    <p>Todo : {{ todoObj.body }}</p>
+    <p>Id : {{ todoObj.id }}</p>
+    <p>Is done? : {{ todoObj.isDone }}</p>
+    <p>Date: {{ todoObj.date }}</p>
+    <button (click)="removeTodo()">Delete</button>
+    <button (click)="switchDoneFlag()">{{ !todoObj.isDone ? "Done" : "Not Done" }}</button>
+</mat-card>
+
