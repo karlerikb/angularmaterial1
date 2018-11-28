@@ -4,7 +4,9 @@
         <mat-list-item>Date: {{ todoObj.date }}</mat-list-item> 
     </mat-list>
     <mat-card-actions>
-        <button mat-raised-button color="primary" (click)="removeTodo()">Delete</button>
+        <button mat-mini-fab color="warn" (click)="removeTodo()">
+            <mat-icon>close</mat-icon>
+        </button>
         <mat-slide-toggle type="checkbox" color="primary" (click)="switchDoneFlag()">{{ todoObj.isDone ? "Done" : "Not Done" }}</mat-slide-toggle>
     </mat-card-actions>
 </mat-card>
