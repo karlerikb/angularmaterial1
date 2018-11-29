@@ -1,15 +1,16 @@
 <mat-card [class.done-todo]="todoObj.isDone">
     <mat-list>
-        <mat-list-item>Todo : {{ todoObj.body }}
-        <mat-slide-toggle style="margin: 5pt" type="checkbox" color="primary" (click)="switchDoneFlag()">{{ todoObj.isDone ? "Done" : "Not Done" }}</mat-slide-toggle>
+        
+        <mat-list-item>{{ todoObj.body }}
         </mat-list-item> 
     </mat-list>
     <mat-card-actions>
         <mat-chip-list>
-            <mat-chip color="primary" selected>Date: {{ todoObj.date }}</mat-chip>
+            <mat-chip disabled>{{ todoObj.date }}</mat-chip>
             <button mat-mini-fab color="warn" (click)="removeTodo()">
                 <mat-icon>close</mat-icon>
             </button>
+            <mat-slide-toggle style="margin: 5pt" type="checkbox" color="primary" (click)="switchDoneFlag()">{{ todoObj.isDone ? "Done" : "Not Done" }}</mat-slide-toggle>
         </mat-chip-list>
     </mat-card-actions>
 </mat-card>

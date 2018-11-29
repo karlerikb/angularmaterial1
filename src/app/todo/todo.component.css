@@ -2,6 +2,10 @@ mat-card {
     margin-bottom: 5px;
 }
 
+mat-chip-list {
+    outline: none;
+}
+
 .done-todo {
     background-color: lightgreen;
 }
